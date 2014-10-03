@@ -1,0 +1,303 @@
+﻿C:\Users\xmgbr
+λ cd..
+
+C:\Users
+λ cd..
+
+C:\
+λ cd xampp
+
+C:\xampp
+λ cd P2
+The system cannot find the path specified.
+
+C:\xampp
+λ cd htdocs/P2
+
+C:\xampp\htdocs\P2 (master)
+λ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .index.php.marks
+        README.md~
+        css/
+        index.php~
+        logic.php
+        logic.php~
+        variables.php
+        variables.php~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m Layout, form, no description
+error: pathspec 'form,' did not match any file(s) known to git.
+error: pathspec 'no' did not match any file(s) known to git.
+error: pathspec 'description' did not match any file(s) known to git.
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "Layout, form, no description"
+fatal: Unable to create 'C:/xampp/htdocs/P2/.git/index.lock': File exists.
+
+If no other git process is currently running, this probably means a
+git process crashed in this repository earlier. Make sure no other git
+process is running and remove the file manually to continue.
+
+C:\xampp\htdocs\P2 (master)
+λ rmfile index.lock
+'rmfile' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\htdocs\P2 (master)
+λ rm index.lock
+rm: cannot remove `index.lock': No such file or directory
+
+C:\xampp\htdocs\P2 (master)
+λ rm -f ./.git/index.lock
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "Layout, form, no description"
+[master eb147fc] Layout, form, no description
+ 1 file changed, 200 insertions(+), 1 deletion(-)
+ rewrite index.php (100%)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "form separators persistance through submits"
+[master fe41a0c] form separators persistance through submits
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ ls
+README.md  README.md~  css  index.php  index.php~  logic.php  logic.php~  variables.php  variables.php~
+
+C:\xampp\htdocs\P2 (master)
+λ git add logic.php
+
+C:\xampp\htdocs\P2 (master)
+λ git commit logic.php -m "variables, source arrays, variables validation, form values persistance through su
+bmits"
+[master b10a10c] variables, source arrays, variables validation, form values persistance through submits
+ 1 file changed, 172 insertions(+)
+ create mode 100644 logic.php
+
+C:\xampp\htdocs\P2 (master)
+λ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .index.php.marks
+        README.md~
+        css/
+        index.php~
+        logic.php~
+        variables.php
+        variables.php~
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "form separators persistance through submits"
+[master ef12514] form separators persistance through submits
+ 1 file changed, 233 insertions(+), 200 deletions(-)
+ rewrite index.php (93%)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit --amend -m "Layout redesign"
+[master dbd1b5b] Layout redesign
+ 1 file changed, 233 insertions(+), 200 deletions(-)
+ rewrite index.php (93%)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "numbers and symbols form available values changed"
+[master 534c8ae] numbers and symbols form available values changed
+ 1 file changed, 9 insertions(+), 11 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit logic.php -m "organized code, words and numbers logic for password creation complete, logic adap
+ted for two passwords creation"
+[master 90875af] organized code, words and numbers logic for password creation complete, logic adapted for two passwords creation
+ 1 file changed, 68 insertions(+), 45 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit logic.php -m "corrected word an numbers logic, added symbols logic, space separator problem solv
+ed"
+[master 139c786] corrected word an numbers logic, added symbols logic, space separator problem solved
+ 1 file changed, 84 insertions(+), 13 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "small design adaption"
+[master 327db8c] small design adaption
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "small text changes"
+[master ba8e22c] small text changes
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "created help modal"
+[master 9759829] created help modal
+ 1 file changed, 61 insertions(+), 9 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit logic.php -m "corrected & sign bug"
+[master c9ce179] corrected & sign bug
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "minor code rearangements"
+[master b668057] minor code rearangements
+ 1 file changed, 26 insertions(+), 41 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git commit logic.php -m "debug code removed"
+[master 2d4ca0e] debug code removed
+ 1 file changed, 8 insertions(+), 41 deletions(-)
+
+C:\xampp\htdocs\P2 (master)
+λ ls
+README.md   css         index.php   js         logic.php~     variables.php~
+README.md~  index.html  index.php~  logic.php  variables.php
+
+C:\xampp\htdocs\P2 (master)
+λ git add css
+warning: LF will be replaced by CRLF in css/bootstrap.min.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/bootstrap.min.css~.
+The file will have its original line endings in your working directory.
+
+C:\xampp\htdocs\P2 (master)
+λ git commit css
+warning: LF will be replaced by CRLF in css/bootstrap.min.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/bootstrap.min.css~.
+The file will have its original line endings in your working directory.
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+
+C:\xampp\htdocs\P2 (master)
+λ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   css/bootstrap.min.css
+        new file:   css/bootstrap.min.css~
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        #logic.php#
+        .index.php.marks
+        README.md~
+        index.html
+        index.php~
+        js/
+        logic.php~
+        variables.php
+        variables.php~
+
+
+C:\xampp\htdocs\P2 (master)
+λ git push github master index.php
+Enter passphrase for key '/c/Users/xmgbr/.ssh/id_rsa':
+error: src refspec index.php does not match any.
+error: failed to push some refs to 'git@github.com:Karatechop/p2.git'
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "comments"
+[master 880cb5a] comments
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\xampp\htdocs\P2 (master)
+λ git push github master index.php
+Enter passphrase for key '/c/Users/xmgbr/.ssh/id_rsa':
+error: src refspec index.php does not match any.
+error: failed to push some refs to 'git@github.com:Karatechop/p2.git'
+
+C:\xampp\htdocs\P2 (master)
+λ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   css/bootstrap.min.css
+        new file:   css/bootstrap.min.css~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        #logic.php#
+        .index.php.marks
+        README.md~
+        index.html
+        index.php~
+        js/
+        logic.php~
+        variables.php
+        variables.php~
+
+
+C:\xampp\htdocs\P2 (master)
+λ git add index.php
+
+C:\xampp\htdocs\P2 (master)
+λ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   css/bootstrap.min.css
+        new file:   css/bootstrap.min.css~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        #logic.php#
+        .index.php.marks
+        README.md~
+        index.html
+        index.php~
+        js/
+        logic.php~
+        variables.php
+        variables.php~
+
+
+C:\xampp\htdocs\P2 (master)
+λ git commit index.php -m "comments1"
+On branch master
+Untracked files:
+        #logic.php#
+        .index.php.marks
+        README.md~
+        css/
+        index.html
+        index.php~
+        js/
+        logic.php~
+        variables.php
+        variables.php~
+
+nothing added to commit but untracked files present
+
+C:\xampp\htdocs\P2 (master)
+λ git push github master index.php
+Enter passphrase for key '/c/Users/xmgbr/.ssh/id_rsa':
+error: src refspec index.php does not match any.
+error: failed to push some refs to 'git@github.com:Karatechop/p2.git'
