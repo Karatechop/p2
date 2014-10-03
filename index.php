@@ -20,18 +20,18 @@
 
 <div id="top" class="container">
 
-<div class="page-header" id="banner">
 	<div class="row">
 		<div class="col-sm-12">
 			<h4 class="text-success">HES CSCI E-15 Dynamic Web Aplications fall 2014 Project #2 created by Boris Rugel.</h4>
 		</div>
 	</div>
-</div>
+
 	
 
 
 
 <div class="jumbotron">
+	
 	<h1>xkcd Password Generator</h1>
 	<p>This application helps you create easy to remember, easy to type and secure enough passwords for everyday use</p>
   
@@ -226,9 +226,20 @@
 			</div>
 	
 			<div class="panel-body">
-				<p>Lorem ipsum dolor sit amet, at sed ullum euripidis consectetuer, ei eos oblique antiopam. Verterem persecuti est ea. Cu atqui hendrerit his. Per invidunt adversarium at. No natum platonem sadipscing sit, mei in populo nostrud. Eros pertinacia percipitur pri in, ignota virtute sea ad, nonumy regione dolores vim cu.
-				Pri ea sale prima noster, an sed volutpat repudiandae. Sed scribentur suscipiantur et, unum solet fastidii has id. Ne nec perpetua liberavisse necessitatibus. Facilisi salutandi eos et. Facilis nusquam platonem his ut. Per everti dolorum commune ut, ea qui mollis expetendis, essent elaboraret inciderint per no. Ei verterem sensibus postulant nec, legimus sensibus delicatissimi ius et..
-				Lorem ipsum dolor sit amet, at sed ullum euripidis consectetuer, ei eos oblique antiopam. Verterem persecuti est ea. Cu atqui hendrerit his. Per invidunt adversarium at. No natum platonem sadipscing sit, mei in populo nostrud. Eros pertinacia percipitur pri in, ignota virtute sea ad, nonumy regione dolores vim cu.</p></div>	
+				<p>This password generator is inspired by a popular on-line comic that graphically describes how long memorable passphrases are a better option than alien looking seemingly random passwords we have been taught we should use.</p>
+				<center><img src=img/xkcd.jpg></center>
+				<p>You can find the original comic <a href = http://xkcd.com/936/> here</a></p>
+				<p>For better understanding of this comic I suggest you read the first part of explanation provided by <a href = http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength>explainxkcd.com</a> :</p>
+				<p>"This comic is saying that the password in the top frames "Tr0ub4dor&3" is easier for password cracking software to guess because it has less entropy than "correcthorsebatterystaple" and also more difficult for a human to remember, leading to insecure practices like writing the password down on a post-it attached to the monitor.</p>
+				<p>In simple cases the entropy of a password is calculated as a^b where a is the number of allowed symbols and b is its length. A dictionary word (however long) has an entropy of around 65000, i.e. 16 bits. A truly random string of length 11 (not like "Tr0ub4dor&3", but more like "J4I/tyJ&Acy") has 94^11 = 72.1 bits. However the comic shows that "Tr0ub4dor&3" has only 28 bits of entropy. Another way of selecting a password is to have 2048 "symbols" (common words) and select only 4 of those symbols. 2048^4 = 44 bits, much better than 28.</p>
+				<p>It is absolutely true that people make passwords hard to remember because they think they are "safer", and it is certainly true that length, all other things being equal, tends to make for very strong passwords and this can confirmed by using rumkin.com's password strength checker. Even if the individual characters are all limited to [a-z], the exponent implied in "we added another lowercase character, so multiply by 26 again" tends to dominate the results.</p>
+				<p>In addition to being easier to remember, long strings of lowercase characters are also easier to type on smartphones and soft keyboards.</p>
+				<p>xkcd's password generation scheme requires the user to have a list of 2048 common words (log2(2048) = 11). For any attack we must assume that the attacker knows our password generation algorithm, but not the exact password. In this case the attacker knows the 2048 words, and knows that we selected 4 words, but not which words. The number of combinations of 4 words from this list of words is (211)4 = 244 bits. For comparison, the entropy offered by Diceware's 7776 word list is 13 bits per word. If the attacker doesn't know the algorithm used, and only knows that lowercase letters are selected, the "common words" password would take even longer to crack than depicted. 25 random lowercase characters would have 117 bits of entropy, vs 44 bits for the common words list.</p>
+				<p>Steve Gibson from the Security Now podcast did a lot of work in this arena and found that the password D0g..................... (24 characters long) is stronger than PrXyc.N(n4k77#L!eVdAfp9 (23 characters long) because both have at least one uppercase letter, lowercase letter, number, and "special" character, so length trumps perceived complexity. Steve Gibson makes this very clear in his password haystack reference guide and tester:</p>
+				<p><strong>"Once an exhaustive password search begins, the most important factor is password length!"</strong></p>
+				<p>The important thing to take away from this comic is that longer passwords are better because each additional character adds much more time to the breaking of the password. That's what Randall is trying to get through here. Complexity does not matter unless you have length in passwords. Complexity is more difficult for humans to remember, but length is not."</p>
+				<p>If hungry for more, you can continue reading <a href = http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength>here</a></p>
+				
 				
 			</div>
 			
