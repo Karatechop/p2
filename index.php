@@ -213,7 +213,8 @@
 			You can get a sence of your password's strength using the <a href="https://www.grc.com/haystack.htm">"Haystack"</a> application by Gibson Research Corporation.
   			</p>
 		</div>	
-		</div>		
+	</div>		
+
 	</div>
   	
 <!-- About xkcd pwd -->
@@ -227,11 +228,11 @@
 	
 			<div class="panel-body">
 				<p>This password generator is inspired by a popular on-line comic that graphically describes how long memorable passphrases are a better option than alien looking seemingly random passwords we have been taught we should use.</p>
-				<center><img src=img/xkcd.jpg></center>
+				<img src=img/xkcd.jpg alt="xkcd password">
 				<p>You can find the original comic <a href = http://xkcd.com/936/> here</a></p>
 				<p>For better understanding of this comic I suggest you read the first part of explanation provided by <a href = http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength>explainxkcd.com</a> :</p>
-				<p>"This comic is saying that the password in the top frames "Tr0ub4dor&3" is easier for password cracking software to guess because it has less entropy than "correcthorsebatterystaple" and also more difficult for a human to remember, leading to insecure practices like writing the password down on a post-it attached to the monitor.</p>
-				<p>In simple cases the entropy of a password is calculated as a^b where a is the number of allowed symbols and b is its length. A dictionary word (however long) has an entropy of around 65000, i.e. 16 bits. A truly random string of length 11 (not like "Tr0ub4dor&3", but more like "J4I/tyJ&Acy") has 94^11 = 72.1 bits. However the comic shows that "Tr0ub4dor&3" has only 28 bits of entropy. Another way of selecting a password is to have 2048 "symbols" (common words) and select only 4 of those symbols. 2048^4 = 44 bits, much better than 28.</p>
+				<p>"This comic is saying that the password in the top frames "Tr0ub4dor&amp;3" is easier for password cracking software to guess because it has less entropy than "correcthorsebatterystaple" and also more difficult for a human to remember, leading to insecure practices like writing the password down on a post-it attached to the monitor.</p>
+				<p>In simple cases the entropy of a password is calculated as a^b where a is the number of allowed symbols and b is its length. A dictionary word (however long) has an entropy of around 65000, i.e. 16 bits. A truly random string of length 11 (not like "Tr0ub4dor&amp;3", but more like "J4I/tyJ&amp;Acy") has 94^11 = 72.1 bits. However the comic shows that "Tr0ub4dor&amp;3" has only 28 bits of entropy. Another way of selecting a password is to have 2048 "symbols" (common words) and select only 4 of those symbols. 2048^4 = 44 bits, much better than 28.</p>
 				<p>It is absolutely true that people make passwords hard to remember because they think they are "safer", and it is certainly true that length, all other things being equal, tends to make for very strong passwords and this can confirmed by using rumkin.com's password strength checker. Even if the individual characters are all limited to [a-z], the exponent implied in "we added another lowercase character, so multiply by 26 again" tends to dominate the results.</p>
 				<p>In addition to being easier to remember, long strings of lowercase characters are also easier to type on smartphones and soft keyboards.</p>
 				<p>xkcd's password generation scheme requires the user to have a list of 2048 common words (log2(2048) = 11). For any attack we must assume that the attacker knows our password generation algorithm, but not the exact password. In this case the attacker knows the 2048 words, and knows that we selected 4 words, but not which words. The number of combinations of 4 words from this list of words is (211)4 = 244 bits. For comparison, the entropy offered by Diceware's 7776 word list is 13 bits per word. If the attacker doesn't know the algorithm used, and only knows that lowercase letters are selected, the "common words" password would take even longer to crack than depicted. 25 random lowercase characters would have 117 bits of entropy, vs 44 bits for the common words list.</p>
@@ -245,16 +246,16 @@
 			
 		</div>
 	</div>
-
+</div>
 <!-- Footer -->
 <footer>
-<div class="row">
+	<div class="row">
 		<div class="col-lg-12">	
 			<ul class="list-unstyled">
 				<li class="pull-left">This project on <a href="https://github.com/Karatechop/p2">GitHub</a>				
 				<li class="pull-right"><a href="#top">Back to top</a></li>
 			</ul>
-			</div>
+		</div>
         </div>
         
 
