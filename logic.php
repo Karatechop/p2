@@ -96,15 +96,22 @@ $symbol_list = Array("!", "#", "%", "^", "&amp;", "+" );
 
 //---------------------------Check variables for errors-------------------------
 if ($number_of_words < 1 or $number_of_words > 10) {
-    $number_of_words = 4;
+	$number_of_words = 4;
+}  elseif (!(is_numeric($number_of_words))){
+	$number_of_words = 2;
 };
  
 if ($include_numbers < 0 or $include_numbers > 3) {
-    $include_numbers = 2;
+	$include_numbers = 2;
+}  elseif (!(is_numeric($include_numbers))){
+	$include_numbers = 2;
 };
 
+
 if ($include_symbols < 0 or $include_symbols > 3) {
-    $include_symbols = 2;
+	$include_symbols = 2;
+} elseif (!(is_numeric($include_symbols))){
+	$include_symbols = 2;
 };	
 
 if (!(in_array($separator, $separator_list, true))) { 
@@ -230,4 +237,7 @@ $password_2 = strtoupper($words_chain_2.$separator.$symbols_chain_2);
 } elseif  ($include_numbers > 0  && $include_symbols == 0) {
 $password_1 = strtoupper($words_chain_1.$number_1);
 $password_2 = strtoupper($words_chain_2.$number_2);
-	};	
+} elseif  ($include_numbers == 0  && $include_symbols == 0) {
+$password_1 = strtoupper($words_chain_1);
+$password_2 = strtoupper($words_chain_2);
+};
