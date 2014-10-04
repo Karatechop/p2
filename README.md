@@ -8,7 +8,7 @@ A simple xkcd password generator created as my Harvard Extension School CSCI
 E-15 P2 project.
 
 ## Demo
-
+http://www.screencast.com/t/E48Fzo5k
 
 ## Details for teaching team
 No login required.
