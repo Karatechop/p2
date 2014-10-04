@@ -75,7 +75,7 @@ foreach ($symbols_number_selected as $key => $value)
 	};
 
 //-----------------------------Separators---------------------------------------
-$separator_list = Array("space", "-", "_", "@", "*");
+$separator_list = Array("space", "-");
 
 $sep_selected = Array();
 foreach ($separator_list as $key => $value)
@@ -91,7 +91,7 @@ foreach ($separator_list as $key => $value)
 //---------------------------Define source arrays-------------------------------
 $word_list = Array("alpha", "right", "moose", "blatant", "longitude", "spammers",
 	"flood", "sneaky", "daniel", "juggling", "stomp");
-$symbol_list = Array("!", "#", "%", "^", "&amp;", "+" );
+$symbol_list = Array("!", "#", "%", "^", "&amp;", "+" , "_", "@", "*");
 // $separator_list already defined in form values persistance part
 
 //---------------------------Check variables for errors-------------------------
