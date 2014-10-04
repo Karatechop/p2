@@ -135,10 +135,7 @@
 			<div class="col-lg-7">
 			<select class="form-control" name="separator" id="separator">
 				<option <?= $sep_selected["space"]?> >space</option>
-				<option <?= $sep_selected["_"]?> >_</option>
 				<option <?= $sep_selected["-"]?> >-</option>
-				<option <?= $sep_selected["@"]?> >@</option>
-				<option <?= $sep_selected["*"]?> >*</option>
 			</select>
 			
 			</div>
