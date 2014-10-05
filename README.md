@@ -20,6 +20,12 @@ delete P2 folders in my foot, on GH and on DigitalOcean, recreate and reconnect
 them. All commits visible on GH were done after P2 recreation. Older commits can 
 be found in "commit_history_and_errors.txt".
 
+## Commits after deadline
+Separator bug correction - if other symbols then " " (space) and "-" used password 
+does not fit into output area, removed other symbols then " " and "-" from 
+separator array and added them to symbol list array to avoid page redesign. 
+Password creation logic remained intact.
+
 ## Outside code
 * Bootstrap: http://getbootstrap.com/
 * Bootstrap Theme: http://bootswatch.com/superhero/
